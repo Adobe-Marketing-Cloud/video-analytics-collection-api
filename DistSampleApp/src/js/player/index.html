@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>BasicPlayerSample</title>
+
+        <link rel="stylesheet" href="style/base.css" />
+
+        <script src="script/lib/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+    <h2>Video Analytics API: Reference Implementation (HTML5)</h2>
+
+    <div class="container">
+        <video id="movie" width="600" preload controls>
+           <!-- Use this source for buffering sample-->
+            <!-- <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_20mb.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> --> 
+            <source src="http://s3.amazonaws.com/downloads.debug.adobe.com/va-api-sample-videos/clickbaby.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'><source src="http://s3.amazonaws.com/downloads.debug.adobe.com/va-api-sample-videos/clickbaby.webm" type='video/webm; codecs="vp8, vorbis"'>
+            <source src="http://s3.amazonaws.com/downloads.debug.adobe.com/va-api-sample-videos/clickbaby.ogv" type='video/ogg; codes="theora, vorbis"'>
+        </video>
+
+        <div class="overlay" id="pub-label" hidden>P</div>
+    </div>
+
+    <p>
+        More info. about media events in html5 players can be found at <a href="http://www.w3.org/2010/05/video/mediaevents.html">the w3c</a>
+    </p>
+
+    </body>
+</html>
